@@ -2,6 +2,9 @@ Feature: Edit blog
 	As a blog owner
 	I can edit my blog posts
 
+Background:
+	Given I logged into system with email "admin@email.com" and password "12345678"
+
 Scenario: Edit blog
 	Given there is a post with title "Dummy post" and	content "Dummy content"
 	And I am on the blog homepage

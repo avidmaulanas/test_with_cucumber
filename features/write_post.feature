@@ -1,7 +1,10 @@
 Feature: Write blog
 	As a blog owner
 	I can write new blog post
-	
+
+Background:
+	Given I logged into system with email "admin@email.com" and password "12345678"
+
 Scenario: Write blog
 	Given I am on the blog homepage
 	When I click "New Post" link
