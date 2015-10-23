@@ -10,3 +10,9 @@ Scenario: Write blog
 	And I fill "Test content" as content
 	And I click "Post" button
 	Then I should see the blog I just posted
+  And I am on the blog homepage
+  When I click "New Post" link
+  And I fill "" as Title
+  And I fill "" as content
+  And I click "Post" button
+  Then I should see the error messages

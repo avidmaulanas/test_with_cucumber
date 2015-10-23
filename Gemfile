@@ -48,6 +48,8 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'factory_girl_rails'
+  gem 'simplecov', require: false
+  gem 'chromedriver-helper'
 end
 
 gem 'devise'
