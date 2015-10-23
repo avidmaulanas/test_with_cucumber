@@ -5,7 +5,9 @@
 # files.
 
 require 'simplecov'
-SimpleCov.start 'rails'
+SimpleCov.start do
+  add_group "Controllers", "app/controllers"
+end
 SimpleCov.coverage_dir 'coverage/cucumber'
 
 require 'cucumber/rails'
